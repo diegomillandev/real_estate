@@ -1,6 +1,7 @@
 import { assets } from "@/assets/assets";
 import { MenuBackDrop } from "./MenuBackDrop";
 import { navItems } from "@/constants";
+import { MenuMobile } from "./ MenuMobile";
 
 export const Navbar = () => {
   return (
@@ -32,10 +33,7 @@ export const Navbar = () => {
           >
             Contact
           </button>
-
-          <button className="md:hidden w-7">
-            <img src={assets.menu_icon} alt="" />
-          </button>
+          <MenuMobile />
         </div>
       </div>
       <MenuBackDrop props=".menu-item" />
