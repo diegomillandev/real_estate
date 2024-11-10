@@ -1,5 +1,6 @@
 import { assets } from "@/assets/assets";
 import { MenuBackDrop } from "./MenuBackDrop";
+import { navItems } from "@/constants";
 
 export const Navbar = () => {
   return (
@@ -9,10 +10,11 @@ export const Navbar = () => {
           <img src={assets.logo} alt="logo" />
 
           <ul className="hidden md:flex gap-7 text-white [&>li]:hover:cursor-pointer relative">
-            <li className="menu-item py-1 px-2">Home</li>
-            <li className="menu-item py-1 px-2">About</li>
-            <li className="menu-item py-1 px-2">Projects</li>
-            <li className="menu-item py-1 px-2">Testimonials</li>
+            {navItems.map((item, index) => (
+              <li key={index} className="menu-item py-1 px-2">
+                {item.title}
+              </li>
+            ))}
           </ul>
 
           <button
