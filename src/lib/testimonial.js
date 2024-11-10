@@ -1,6 +1,6 @@
-import profile_img_1 from "../assets/profile_img_1.png";
-import profile_img_2 from "../assets/profile_img_2.png";
-import profile_img_3 from "../assets/profile_img_3.png";
+import profile_img_1 from "@/assets/profile_img_1.png";
+import profile_img_2 from "@/assets/profile_img_2.png";
+import profile_img_3 from "@/assets/profile_img_3.png";
 
 export const testimonialsData = [
   {
