@@ -13,8 +13,11 @@ export const Navbar = () => {
           <nav aria-label="Main Navigation">
             <ul className="hidden md:flex gap-7 text-white [&>li]:hover:cursor-pointer relative">
               {navItems.map((item, index) => (
-                <li key={index} className="menu-item py-1 px-2">
-                  <a href={item.href} className="text-white">
+                <li key={index} className="menu-item">
+                  <a
+                    href={item.link}
+                    className="text-white py-1 px-2 inline-block"
+                  >
                     {item.title}
                   </a>
                 </li>

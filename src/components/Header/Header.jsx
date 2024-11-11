@@ -1,9 +1,10 @@
+import { Section } from "../shared";
 import { Navbar } from "./Navbar";
 
 export const Header = () => {
   return (
     <div className="bg-hero-pattern min-h-screen bg-cover bg-center flex justify-center items-center w-full overflow-hidden">
-      <div className="container text-center mx-auto py-4 px-6 md:px-20 lg:px-32 text-white flex flex-col items-center">
+      <Section classNames="text-white text-center">
         <h2 className="text-5xl sm:text-6xl md:text-[5.5rem] inline-block max-w-3xl font-semibold pt-20">
           Explore homes that fit your dreams
         </h2>
@@ -21,7 +22,7 @@ export const Header = () => {
             Contact Us
           </a>
         </div>
-      </div>
+      </Section>
       <Navbar />
     </div>
   );
