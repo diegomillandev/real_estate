@@ -10,13 +10,13 @@ export const Header = () => {
         </h2>
         <div className="mt-10 inline-flex gap-x-4">
           <a
-            href="#projects"
+            href="#Projects"
             className="py-2 px-4 rounded border transition-colors duration-150 border-white hover:bg-gray-50/10"
           >
             Projects
           </a>
           <a
-            href="#contact"
+            href="#Contact"
             className="py-2 px-4 rounded transition-colors duration-150 bg-blue-700 hover:bg-blue-600"
           >
             Contact Us
